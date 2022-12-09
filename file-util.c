@@ -1,7 +1,6 @@
 /*  
     File: fileutil.c
     Name: Yash Joshi
-    Student ID: 32477236
     Start date: 18/08/2022
     Last modified: 26/08/2022
     Program Description: This program, by default, reads and outputs the first 10 words of a file called sample.txt in the current directory. 
