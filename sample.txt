@@ -1,0 +1,4 @@
+Hi my name is Yash. This program, by default prints the first 10 words in file sample.txt to the standard output (command line). A user can provide multiple
+command line arguments when executing the program such as a path to an input file, this must always be the first argument if provided. Also be specifying the -n flag they can change
+the amount of words to be printed. Lastly using the -a flag a user can, insead of printing to the command line, append 10 or n words to a file, the absolute path of this file must be
+provided after the -a flag.

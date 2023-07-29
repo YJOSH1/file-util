@@ -1,0 +1,53 @@
+--------------------------
+DOCUMENTATION - FILE UTIL
+--------------------------
+
+
+--------------
+HOW TO COMPILE
+--------------
+1. Open the terminal
+2. Navigate to the directory, using the cd command, that contains the following files, fileutil.c, functions.c, and functions.h
+3. Use the following command to compile:  gcc -o fileutil fileutil.c functions.c
+4. All done! The program has been compiled and can be run
+
+
+----------------------
+HOW TO RUN THE PROGRAM
+----------------------
+1. Open the terminal
+2. Navigate to the directory, using the cd command, that contains the file we compiled in the previous section "HOW TO COMPILE"
+3. Ensure the file sample.txt exists, by using the ls command, and check that it contains words, by cat command. If the file is empty
+   you can add words by using the nano sample.txt command.
+3. Type ./fileutil and press enter and the program will execute!
+
+
+----------------------------
+HOW TO USE OPTIONAL FEATURES
+----------------------------
+The program has the following features that can change the way the way the program works by specifying certain arguments when executing the program.
+1. Reading a different file, in a different directory, instead of the default sample.txt in the current directory
+2. Appending words to the end of a specified file instead of outputting words to the command line
+3. Change the amount of words to be outputted/appended from the deafault 10 to your required amount
+
+To read words from a different file, instead of the default sample.txt
+----------------------------------------------------------------------
+When running the program provide the absolute path of the file after the program name. For example: ./fileutil /home/Documents/myfile.txt.
+When using this feature, the absolute path of the file must be provided and it must always be the first argument.
+
+To append words to the end of a specific file instead of outputting them to terminal
+------------------------------------------------------------------------------------
+When running the program provide the -a flag immediately followed by the absolute path of the destination file. For example: ./fileutil -a /home/Documents/out.txt.
+When using this feature, the absolute path of the file must be provided. This argument can appear anywhere in the execution statement.
+
+To change the amount of words to be outputted/appended
+------------------------------------------------------
+When running the program provide the -n flag immediately followed by the number of words you would like to be outputted/appended. For example: ./fileutil -n 50.
+When using this feature, the amount of words must be provided as an integer. This argument can appear anywhere in the execution statement.
+
+Using multiple features at once
+-------------------------------
+It is possible to use multipe or all of the three provided features at once. For example to append the first 15 words in the file a.txt to the file b.txt in different
+directories the following execution statemtn can be used; ./fileutil /home/Documents/a.txt -n 15 -a /home/Desktop/b.txt. The -a and -n flags can appear in any order.
+However the source file path must always be the first argument following the program name if you need to read a custom file. Additioanlly all paths provided must be 
+absolute.
